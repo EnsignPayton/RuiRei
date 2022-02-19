@@ -1,0 +1,30 @@
+﻿<rui:ReactiveUserControl
+    x:Class="RuiRei.Wpf.Views.DictionaryView"
+    x:TypeArguments="vm:DictionaryViewModel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:rui="http://reactiveui.net"
+    xmlns:vm="clr-namespace:RuiRei.Core.ViewModels;assembly=RuiRei.Core"
+    mc:Ignorable="d"
+    d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="TermBox"
+                 Grid.Row ="0"
+                 FontSize="16"
+                 Margin="16"
+                 HorizontalAlignment="Stretch" />
+
+        <ListBox x:Name="ResultBox"
+                 Grid.Row="1"
+                 Margin="16"
+                 HorizontalContentAlignment="Stretch"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" />
+    </Grid>
+</rui:ReactiveUserControl>
