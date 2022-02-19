@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RuiRei.Core\RuiRei.Core.csproj" />
+    <ProjectReference Include="..\RuiRei.DataAccess\RuiRei.DataAccess.csproj" />
+    <ProjectReference Include="..\RuiRei.Reactive\RuiRei.Reactive.csproj" />
   </ItemGroup>
 
 </Project>

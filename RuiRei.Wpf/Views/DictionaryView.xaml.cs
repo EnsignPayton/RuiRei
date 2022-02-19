@@ -1,6 +1,7 @@
 ﻿using System.Reactive.Disposables;
 using ReactiveUI;
-using RuiRei.Core.ViewModels;
+using RuiRei.Reactive.Services;
+using RuiRei.Reactive.ViewModels;
 
 namespace RuiRei.Wpf.Views;
 
@@ -10,7 +11,7 @@ public partial class DictionaryView
     {
         InitializeComponent();
 
-        ViewModel = new DictionaryViewModel();
+        ViewModel = new DictionaryViewModel(new DictionaryService());
 
         this.WhenActivated(disposable =>
         {

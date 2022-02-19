@@ -6,25 +6,43 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:rui="http://reactiveui.net"
-    xmlns:vm="clr-namespace:RuiRei.Core.ViewModels;assembly=RuiRei.Core"
+    xmlns:vm="clr-namespace:RuiRei.Reactive.ViewModels;assembly=RuiRei.Reactive"
     mc:Ignorable="d"
     d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
+        <TextBlock Grid.Row="0"
+                   FontSize="24"
+                   Foreground="DimGray"
+                   Margin="16"
+                   Text="Search English, Japanese, Romaji, words or text" />
+
         <TextBox x:Name="TermBox"
-                 Grid.Row ="0"
+                 Grid.Row="1"
                  FontSize="16"
-                 Margin="16"
+                 Margin="16 0"
                  HorizontalAlignment="Stretch" />
 
         <ListBox x:Name="ResultBox"
-                 Grid.Row="1"
+                 Grid.Row="2"
                  Margin="16"
+                 AlternationCount="2"
                  HorizontalContentAlignment="Stretch"
-                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" />
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Style.Triggers>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                            <Setter Property="Background" Value="#EFEFEF" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
     </Grid>
 </rui:ReactiveUserControl>

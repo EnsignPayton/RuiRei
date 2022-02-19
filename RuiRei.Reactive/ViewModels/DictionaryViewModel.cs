@@ -2,7 +2,7 @@
 using ReactiveUI;
 using RuiRei.Core.Services;
 
-namespace RuiRei.Core.ViewModels;
+namespace RuiRei.Reactive.ViewModels;
 
 public class DictionaryViewModel : ReactiveObject
 {
@@ -21,9 +21,9 @@ public class DictionaryViewModel : ReactiveObject
         set => this.RaiseAndSetIfChanged(ref _term, value);
     }
 
-    public DictionaryViewModel()
+    public DictionaryViewModel(IDictionaryService service)
     {
-        _service = new DictionaryService();
+        _service = service;
 
         _result = this
             .WhenAnyValue(x => x.Term)

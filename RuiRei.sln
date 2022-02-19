@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.Core", "RuiRei.Core\RuiRei.Core.csproj", "{73CFFE27-E37C-4D42-AECD-E2F9C2C1523E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuiRei.Core", "RuiRei.Core\RuiRei.Core.csproj", "{73CFFE27-E37C-4D42-AECD-E2F9C2C1523E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.Wpf", "RuiRei.Wpf\RuiRei.Wpf.csproj", "{E92BA082-D02C-4E81-95FE-D70538566D09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuiRei.Wpf", "RuiRei.Wpf\RuiRei.Wpf.csproj", "{E92BA082-D02C-4E81-95FE-D70538566D09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.Reactive", "RuiRei.Reactive\RuiRei.Reactive.csproj", "{7938195F-CB54-452C-9A41-C5297E91DE5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.DataAccess", "RuiRei.DataAccess\RuiRei.DataAccess.csproj", "{AE09FB54-F74C-4269-B01A-1D541813094D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{E92BA082-D02C-4E81-95FE-D70538566D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E92BA082-D02C-4E81-95FE-D70538566D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E92BA082-D02C-4E81-95FE-D70538566D09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7938195F-CB54-452C-9A41-C5297E91DE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7938195F-CB54-452C-9A41-C5297E91DE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7938195F-CB54-452C-9A41-C5297E91DE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7938195F-CB54-452C-9A41-C5297E91DE5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE09FB54-F74C-4269-B01A-1D541813094D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE09FB54-F74C-4269-B01A-1D541813094D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE09FB54-F74C-4269-B01A-1D541813094D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE09FB54-F74C-4269-B01A-1D541813094D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,8 @@
 ﻿using JishoNET.Models;
 using RuiRei.Core.Models;
+using RuiRei.Core.Services;
 
-namespace RuiRei.Core.Services;
+namespace RuiRei.Reactive.Services;
 
 public class DictionaryService : IDictionaryService
 {

@@ -1,7 +1,7 @@
 ﻿using ReactiveUI;
 using RuiRei.Core.Models;
 
-namespace RuiRei.Core.ViewModels;
+namespace RuiRei.Reactive.ViewModels;
 
 public class SenseViewModel : ReactiveObject
 {
