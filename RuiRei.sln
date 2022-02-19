@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.Reactive", "RuiRei.R
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.DataAccess", "RuiRei.DataAccess\RuiRei.DataAccess.csproj", "{AE09FB54-F74C-4269-B01A-1D541813094D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuiRei.WinForms", "RuiRei.WinForms\RuiRei.WinForms.csproj", "{FB7AA646-B292-45A6-8E0C-BDA5127498A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{AE09FB54-F74C-4269-B01A-1D541813094D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE09FB54-F74C-4269-B01A-1D541813094D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE09FB54-F74C-4269-B01A-1D541813094D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB7AA646-B292-45A6-8E0C-BDA5127498A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB7AA646-B292-45A6-8E0C-BDA5127498A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB7AA646-B292-45A6-8E0C-BDA5127498A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB7AA646-B292-45A6-8E0C-BDA5127498A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

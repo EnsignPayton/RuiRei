@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI.WinForms" Version="17.1.50" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RuiRei.DataAccess\RuiRei.DataAccess.csproj" />
+    <ProjectReference Include="..\RuiRei.Reactive\RuiRei.Reactive.csproj" />
+  </ItemGroup>
+
+</Project>
